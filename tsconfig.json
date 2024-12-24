@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "preserveConstEnums": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "target": "ES2020",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  }
+}
