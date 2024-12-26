@@ -39,11 +39,11 @@ export const updateSpecialtyById = async (
 ) => {
   try {
     const { id } = req.params;
-    const { updates } = req.body;
+    const { name } = req.body;
 
     const updatedSpecialty = await SpecialtyCrudService.updateSpecialtyById(
       id,
-      updates
+      { name }
     );
 
     sendApiResponse(

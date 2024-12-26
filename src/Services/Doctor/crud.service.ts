@@ -22,7 +22,7 @@ export const createDoctor = async (doctorData: {
 };
 
 export const getDoctors = async () => {
-  return await Doctors.find();
+  return await Doctors.find().populate("specialty", "name");
 };
 
 export const updateDoctorById = async (
