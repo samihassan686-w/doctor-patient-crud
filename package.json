@@ -8,6 +8,7 @@
     "dev": "nodemon --watch 'src/**/*' -e ts --exec 'node --experimental-specifier-resolution=node --loader ts-node/esm --require tsconfig-paths/register' src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
+    "seed": "node --experimental-specifier-resolution=node --loader ts-node/esm --require tsconfig-paths/register src/Seeders/index.ts",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

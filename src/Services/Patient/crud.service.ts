@@ -14,7 +14,7 @@ export const createPatient = async (patientData: {
 
   const newPatient = new Patients({
     ...patientData,
-    password: generateHashedPassword(patientData.password),
+    password: await generateHashedPassword(patientData.password),
   });
 
   return await newPatient.save();

@@ -15,7 +15,7 @@ export const createDoctor = async (doctorData: {
 
   const newDoctor = new Doctors({
     ...doctorData,
-    passowrd: generateHashedPassword(doctorData.password),
+    passowrd: await generateHashedPassword(doctorData.password),
   });
 
   return await newDoctor.save();

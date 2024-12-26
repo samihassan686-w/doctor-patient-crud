@@ -1,7 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import { sendApiResponse } from "../../Utils/api.response";
 import * as SpecialtyCrudService from "../../Services/Specialty/crud.service";
-import { send } from "process";
 
 export const createSpecialty = async (
   req: Request,
