@@ -6,6 +6,7 @@ const DoctorSpecialtySchema = new schema({
   name: {
     type: String,
     required: true,
+    unique: true,
   },
   createdAt: {
     type: Date,
